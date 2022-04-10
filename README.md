@@ -1,3 +1,27 @@
+# 4배 고해상도 복원 BSRGAN
+
+## 옛날 사진
+
+![](result/readme04.png)
+
+![](result/readme05.png)
+
+## 인물 사진
+
+![](result/readme01.png)
+
+![](result/readme02.png)
+
+![](result/readme03.png)
+
+## [Manga109](http://www.manga109.org)
+
+| Original | Enhanced |
+|---|---|
+| ![](result/1.jpg) | ![](result/1_result.png) |
+| ![](result/90.jpg) | ![](result/90_result.png) |
+
+---
 #  [Designing a Practical Degradation Model for Deep Blind Image Super-Resolution](https://arxiv.org/pdf/2103.14006.pdf)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=cszn/BSRGAN) 
