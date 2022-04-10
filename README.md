@@ -21,6 +21,20 @@
 | ![](result/1.jpg) | ![](result/1_result.png) |
 | ![](result/90.jpg) | ![](result/90_result.png) |
 
+## SR + Colorization
+
+- davertor/colorizing_images https://huggingface.co/spaces/davertor/colorizing_images
+- PaddlePaddle/deoldify https://huggingface.co/spaces/PaddlePaddle/deoldify
+
+| Original | SR + Colorization |
+|---|---|
+| ![](result/g01.jpg) | ![](result/g01_color.png) |
+| ![](result/g02.jpg) | ![](result/g02_color.png) |
+| ![](result/j01.jpg) | ![](result/j01_color.png) |
+| ![](result/j02.jpg) | ![](result/j02_color.png) |
+| ![](result/j03.jpg) | ![](result/j03_color.png) |
+| ![](result/j05.jpg) | ![](result/j05_color.png) |
+
 ---
 #  [Designing a Practical Degradation Model for Deep Blind Image Super-Resolution](https://arxiv.org/pdf/2103.14006.pdf)
 
