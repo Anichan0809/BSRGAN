@@ -7,6 +7,8 @@ from models.network_rrdbnet import RRDBNet as net
 # https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth
 # `model_zoo/BSRGAN.pth`
 
+img_path = 'result/j02_color.jpg'
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = net(in_nc=3, out_nc=3, nf=64, nb=23, gc=32, sf=4)
@@ -15,13 +17,13 @@ model = model.to(device)
 model.eval()
 
 with torch.no_grad():
-    img = cv2.imread('testsets/test/KakaoTalk_Photo_2022-03-02-15-26-26.png')
+    img = cv2.imread(img_path)
 
-    img_L = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    img_L = cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)
     img_L = util.uint2tensor4(img_L)
     img_L = img_L.to(device)
 
     img_E = model(img_L)
 
     img_E = util.tensor2uint(img_E)
-    util.imsave(img_E, 'result.png')
+    util.imsave(img_E, os.path.splitext(img_path)[0] + '_result.png')
