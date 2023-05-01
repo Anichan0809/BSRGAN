@@ -4,10 +4,10 @@ import os
 from utils import utils_image as util
 from models.network_rrdbnet import RRDBNet as net
 
-# https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth
+# https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth  <- 이 파일 아래 파일에 넣기
 # `model_zoo/BSRGAN.pth`
 
-img_path = 'result/j02_color.jpg'
+img_path = 'result/y03.jpg'
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
